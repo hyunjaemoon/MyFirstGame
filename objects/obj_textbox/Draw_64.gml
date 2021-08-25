@@ -9,6 +9,8 @@ var _image = _arr[MSG.IMAGE];
 // Set text font
 draw_set_font(font0);
 
+//TODO
+
 // Draw textbox
 draw_9slice(x, y, width, height, spr_textbox, 0);
 
