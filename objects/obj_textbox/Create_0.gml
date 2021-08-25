@@ -1,31 +1,8 @@
-//Messages
-messages = ds_list_create();
-messageID = 0;
+// @desc Initiating some variables
+text = "Hello World";
+xscale = 3;
+yscale = 2;
+visible = 0;
 
-//Current Message
-messageText = "";
-messageChar = 0;
-messageSpeed = 0.3;
-
-
-//Message properties
-enum MSG {
-	TEXT,
-	NAME,
-	IMAGE
-}
-
-//GUI dimensions
-var _guiW = display_get_gui_width();
-var _guiH = display_get_gui_height();
-
-//Textbox dimensions
-height = floor(_guiH * 0.45);
-width = _guiW;
-
-//Position on screen
-x = 0;
-y = _guiH - height;
-
-//Other Properties
-padding = 8;
+boxWidth = xscale * sprite_get_width(spr_textbox);
+stringHeight = string_height(text);

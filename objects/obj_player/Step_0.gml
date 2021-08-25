@@ -1,3 +1,7 @@
+if (cleared) {
+	exit;
+}
+
 //Moving Around
 key_left = keyboard_check(ord("D"));
 key_right = keyboard_check(ord("A"));
@@ -23,12 +27,3 @@ if (place_meeting(x, y+vsp, obj_wall)) {
 }
 x = x + hsp;
 y = y + vsp;
-
-//Shoot
-if (mouse_check_button(mb_left)) && cooldown < 1 {
-
-	instance_create_layer(x, y, "BulletsLayer", obj_bullet);
-	cooldown = 3;
-}
-
-cooldown = cooldown - 1;
