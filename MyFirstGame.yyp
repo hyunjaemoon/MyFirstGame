@@ -10,6 +10,7 @@
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":3,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":5,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":7,},
+    {"id":{"name":"spr_maincharup","path":"sprites/spr_maincharup/spr_maincharup.yy",},"order":15,},
     {"id":{"name":"spr_tile","path":"sprites/spr_tile/spr_tile.yy",},"order":24,},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},"order":17,},
     {"id":{"name":"spr_darktile","path":"sprites/spr_darktile/spr_darktile.yy",},"order":9,},

@@ -1,4 +1,5 @@
 if (cleared) {
+	visible = 1-visible;
 	exit;
 }
 
