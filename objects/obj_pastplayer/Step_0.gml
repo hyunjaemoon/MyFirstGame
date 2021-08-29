@@ -9,7 +9,6 @@ key_right = keyboard_check(ord("A"));
 key_down = keyboard_check(ord("S"));
 key_up = keyboard_check(ord("W"));
 
-//Collision
 var _moveHor = key_left - key_right;
 var _moveVer = key_down - key_up;
 hsp = _moveHor * spd
@@ -29,6 +28,7 @@ if (array_length(delayH) >= delay) {
 	exit;
 }
 
+//Collision
 if (place_meeting(x+hsp, y, obj_wall)) {
 	while (!place_meeting(x+sign(hsp), y, obj_wall)) {
 		x = x + sign(hsp)
