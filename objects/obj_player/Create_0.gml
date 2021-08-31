@@ -1,4 +1,4 @@
-//Local Variables for obj_player
+/// @desc Local Variables for obj_player
 
 event_inherited();
 cooldown = 0;

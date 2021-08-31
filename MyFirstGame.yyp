@@ -32,6 +32,7 @@
     {"id":{"name":"obj_enemyspawn","path":"objects/obj_enemyspawn/obj_enemyspawn.yy",},"order":11,},
     {"id":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},"order":13,},
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},"order":1,},
+    {"id":{"name":"spr_portal","path":"sprites/spr_portal/spr_portal.yy",},"order":19,},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":3,},
   ],
   "Options": [
