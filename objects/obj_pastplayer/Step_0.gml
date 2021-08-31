@@ -1,9 +1,8 @@
+/// @desc Player's Past Motions
+visible = 1-visible;
 if (cleared) {
-	visible = 1-visible;
 	exit;
 }
-
-visible = 1-visible;
 //Moving Around
 key_left = keyboard_check(ord("D"));
 key_right = keyboard_check(ord("A"));
@@ -30,6 +29,19 @@ if (array_length(delayH) >= delay) {
 }
 
 //Collision
+
+if (vsp < 0) {
+	sprite_index = spr_maincharup;
+} else if (vsp > 0) {
+	sprite_index = spr_mainchardown;
+} else if (hsp > 0) {
+	sprite_index = spr_maincharright;
+} else if (hsp < 0) {
+	sprite_index = spr_maincharleft;
+} else {
+	sprite_index = spr_mainchar;
+}
+
 if (place_meeting(x+hsp, y, obj_wall)) {
 	while (!place_meeting(x+sign(hsp), y, obj_wall)) {
 		x = x + sign(hsp)
