@@ -1,6 +1,7 @@
 /// @desc Player's Past Motions
 visible = 1-visible;
 if (cleared) {
+	sprite_index = spr_mainchar;
 	exit;
 }
 //Moving Around
@@ -31,9 +32,21 @@ if (array_length(delayH) >= delay) {
 //Collision
 
 if (vsp < 0) {
-	sprite_index = spr_maincharup;
+	if (hsp > 0) {
+		sprite_index = spr_maincharupright;
+	} else if (hsp < 0) {
+		sprite_index = spr_maincharupleft;
+	} else {
+		sprite_index = spr_maincharup;
+	}
 } else if (vsp > 0) {
-	sprite_index = spr_mainchardown;
+	if (hsp > 0) {
+		sprite_index = spr_mainchardownright;
+	} else if (hsp < 0) {
+		sprite_index = spr_mainchardownleft;
+	} else {
+		sprite_index = spr_mainchardown;
+	}
 } else if (hsp > 0) {
 	sprite_index = spr_maincharright;
 } else if (hsp < 0) {
