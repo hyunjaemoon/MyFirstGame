@@ -1,1 +1,1 @@
-room_goto_next();
+room_goto(asset_get_index("rm_button"));
